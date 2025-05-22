@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background: linear-gradient(to right, #009739, #ffcc29, #002776);
+  background: linear-gradient(to right, #0055a4, #ffffff, #ef4135);
+  height: 100vh;
+}
+
+#container {
+  border: 1px solid red;
+
+  width: 100%;
+  max-width: 588px;
+
+  margin: 58px auto 0;
+  padding: 20px;
+}
+
+#profile {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+#profile img {
+  width: 100px;
+  border-radius: 100%;
 }
