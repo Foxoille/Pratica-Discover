@@ -29,62 +29,61 @@ body * {
   padding: 20px;
 }
 
-  #line1 {
-    border: 1px solid red;
-    border-radius: 10px;
-    padding: 10px;
+/*-- Linha Numero um contem Perfil e Botão de Tradução --*/
+#line1 {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 10px;
 
-    display: flex;
-    gap: 200px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    
-    #profile {
-      display: flex;
-      gap: 5px;
-    }
+/*-- Estilizando Perfil --*/
+#profile {
+  display: flex;
+  gap: 5px;
+}
 
-    #profile img {
-      width: 100px;
-      border-radius: 100%;
-    }
+#profile img {
+  width: 100px;
+  border-radius: 100%;
+}
 
-    #profile p {
-      margin: 10px 0;
-      font-weight: 500;
-    }
+#profile p {
+  margin: 10px 0;
+  font-weight: 500;
+}
 
-    /*-- Botão Tradução --*/
+/*-- Botão Tradução --*/
 
-    #switch{
-      position: relative;
-      height: 32px;
-      margin: 20px 10px;
-    }
+#switch {
+  position: relative;
+}
 
-    #switch button{
-      height: 32px;
-      width: 32px;
-      border: 1px solid black;
-      border-radius: 50%;
-      
-      background: url(./assets/bandeira-brasil.jpg) no-repeat center/45px;
-      
-      position: absolute;
-      z-index: 1;
-      
-      transform: translateY(-50%);
-      top: 50%;
-      left: 0;
-    }
-    
-    #switch span{
-      height: 32px;
-      width: 64px;
-      display: block;
-      border: 1px solid black;
-      border-radius: 9999px;
+#switch button {
+  height: 32px;
+  width: 32px;
+  border: 1px solid black;
+  border-radius: 50%;
 
-      z-index: 0;
-    }
-    
+  background: url(./assets/bandeira-brasil.jpg) no-repeat center/45px;
+
+  position: absolute;
+  z-index: 1;
+
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+#switch span {
+  height: 32px;
+  width: 64px;
+  display: block;
+  border: 1px solid black;
+  border-radius: 9999px;
+
+  z-index: 0;
+}
