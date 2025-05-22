@@ -75,14 +75,14 @@ body * {
 
   transform: translateY(-50%);
   top: 50%;
-  left: 0;
+  left: 2%;
 }
 
 #switch span {
-  height: 32px;
+  height: 34px;
   width: 64px;
   display: block;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 9999px;
 
   z-index: 0;
