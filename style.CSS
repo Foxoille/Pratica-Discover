@@ -10,7 +10,11 @@ body {
 }
 
 #container {
-  border: 1px solid red;
+  border: 1px solid black;
+  border-radius: 10px;
+  background:  rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 
   width: 100%;
   max-width: 588px;
@@ -19,12 +23,20 @@ body {
   padding: 20px;
 }
 
-#profile {
+#line1 {
   border: 1px solid red;
   border-radius: 10px;
+  display: flex;
+  padding: 10px;
+}
+
+#profile {
+  display: flex;
 }
 
 #profile img {
   width: 100px;
   border-radius: 100%;
 }
+
+
