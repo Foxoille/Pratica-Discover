@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+body * {
+  font-family: "inter", sans-serif;
+}
+
 #container {
   border: 1px solid black;
   border-radius: 10px;
@@ -26,8 +30,9 @@ body {
 #line1 {
   border: 1px solid red;
   border-radius: 10px;
-  display: flex;
   padding: 10px;
+
+  display: flex;
 }
 
 #profile {
