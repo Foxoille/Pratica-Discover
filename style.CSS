@@ -95,6 +95,7 @@ body * {
   justify-content: space-between;
 }
 
+/*-- Menu --*/
 #menu-list {
   border: 2px solid black;
   border-radius: 8px;
@@ -108,7 +109,7 @@ body * {
   padding: 5px;
 
   width: 100%;
-  max-width: 350px;
+  max-width: 500px;
 
   font-weight: 500;
   font-size: larger;
@@ -119,4 +120,26 @@ body * {
 
   font-weight: 400;
   font-size: small;
+}
+
+/* -- Links Sociais --*/
+
+#contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50%;
+  max-width: 100px;
+
+  border: 1px solid black;
+}
+
+#contact-links a {
+  font-size: larger;
+  color: black;
 }
