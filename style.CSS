@@ -96,6 +96,9 @@ body * {
 }
 
 #menu-list {
+  border: 2px solid black;
+  border-radius: 8px;
+
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -103,4 +106,17 @@ body * {
 
   margin: 10px 0;
   padding: 5px;
+
+  width: 100%;
+  max-width: 350px;
+
+  font-weight: 500;
+  font-size: larger;
+}
+
+#menu-list details ul {
+  margin: 10px;
+
+  font-weight: 400;
+  font-size: small;
 }
