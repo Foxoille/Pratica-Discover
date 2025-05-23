@@ -30,7 +30,7 @@ body * {
 
 /*-- Linha Numero um contem Perfil e Botão de Tradução --*/
 #line1 {
-  border: 1px solid red;
+  border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
 
@@ -53,7 +53,7 @@ body * {
 
 #profile p {
   margin: 10px 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 /*-- Botão Tradução --*/
@@ -96,4 +96,17 @@ body * {
 
 #line2 img {
   width: 150px;
+  height: 200px;
+  margin: 10px;
+
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#line2 p {
+  margin: 10px 0;
+  padding: 10px;
+
+  border: 2px solid black;
+  border-radius: 8px;
 }
