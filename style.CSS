@@ -47,12 +47,13 @@ body * {
 
 #profile img {
   width: 100px;
+  height: 100px;
   border-radius: 100%;
 }
 
 #profile p {
   margin: 10px 0;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /*-- Botão Tradução --*/
