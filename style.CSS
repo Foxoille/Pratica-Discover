@@ -143,3 +143,28 @@ body * {
   font-size: larger;
   color: black;
 }
+
+#line3 ul{
+  list-style: none;
+  display : flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#line3 ul a {
+  color: black;
+  display: flex;
+  justify-content: center; /*Eixo X*/
+  align-items: center; /*Eixo Y*/
+
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid black;
+  border-radius: 8px;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none; /* Tira o underline */
+  font-weight: 500;
+}
