@@ -103,18 +103,26 @@ body * {
   border-radius: 8px;
 
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  justify-content: space-between;
+
   list-style: none;
 
   margin: 10px 0;
-  padding: 5px;
+  padding: 10px;
 
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
 
   font-weight: 500;
   font-size: larger;
+}
+
+#menu-list summary{
+  font-size: larger;
+}
+
+#menu-list details {
+  max-width: 150px;
 }
 
 #menu-list details ul {
@@ -130,7 +138,7 @@ body * {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 10px 0;
+  margin: 10px;
   padding: 5px 0;
 
   max-height: 240px;
@@ -140,7 +148,8 @@ body * {
   width: 50%;
   max-width: 100px;
 
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 #contact-links a {
