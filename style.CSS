@@ -52,8 +52,6 @@ body * {
   border-radius: 100%;
 }
 
-
-
 #profile p {
   font-weight: 500;
 }
@@ -117,7 +115,7 @@ body * {
   font-size: larger;
 }
 
-#menu-list summary{
+#menu-list summary {
   font-size: larger;
 }
 
