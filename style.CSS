@@ -52,6 +52,8 @@ body * {
   border-radius: 100%;
 }
 
+
+
 #profile p {
   font-weight: 500;
 }
@@ -129,7 +131,9 @@ body * {
   flex-direction: column;
   gap: 10px;
   margin: 10px 0;
+  padding: 5px 0;
 
+  max-height: 240px;
   align-items: center;
   justify-content: center;
 
@@ -140,13 +144,13 @@ body * {
 }
 
 #contact-links a {
-  font-size: larger;
+  font-size: 40px;
   color: black;
 }
 
-#line3 ul{
+#line3 ul {
   list-style: none;
-  display : flex;
+  display: flex;
   flex-direction: column;
   gap: 5px;
 }
