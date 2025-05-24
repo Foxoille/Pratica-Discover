@@ -137,7 +137,8 @@ body * {
   flex-direction: column;
   gap: 10px;
   margin: 10px;
-  padding: 5px 0;
+  padding: 5px;
+
 
   max-height: 240px;
   align-items: center;
@@ -148,11 +149,25 @@ body * {
 
   border: 2px solid black;
   border-radius: 10px;
+
+  transition: background 0.5s;
 }
 
 #contact-links a {
   font-size: 40px;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+
+  transition: background 0.2s;
+  border-radius: 50%;
+
+}
+
+#contact-links a:hover{
+  background: rgba(0, 0, 0, 0.2);
 }
 
 #line3 {
@@ -186,6 +201,13 @@ body * {
 
   text-decoration: none; /* Tira o underline */
   font-weight: 500;
+
+  transition: background 0.5s;
+}
+
+#line3 ul li a:hover {
+  border: 2px solid black;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #line3 img{
