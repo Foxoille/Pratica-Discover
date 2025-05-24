@@ -24,7 +24,7 @@ body * {
   width: 100%;
   max-width: 700px;
 
-  margin: 58px auto 0;
+  margin: 20px auto;
   padding: 20px;
 }
 
@@ -155,11 +155,19 @@ body * {
   color: black;
 }
 
+#line3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 #line3 ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 5px;
+
+  width: 100%;
+  margin-right: 10px;
 }
 
 #line3 ul a {
@@ -178,4 +186,20 @@ body * {
 
   text-decoration: none; /* Tira o underline */
   font-weight: 500;
+}
+
+#line3 img{
+  width: 100px;
+  margin: 0 10px;
+
+  border-radius: 10px;
+}
+
+footer{
+  margin: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: black;
 }
