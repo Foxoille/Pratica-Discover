@@ -78,6 +78,10 @@ body * {
   left: 2%;
 }
 
+#switch button:hover{
+  outline: 6px solid rgba(0, 0, 0, 0.2);
+}
+
 #switch span {
   height: 34px;
   width: 64px;
