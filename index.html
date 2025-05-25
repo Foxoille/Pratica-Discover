@@ -30,14 +30,22 @@
             src="./assets/perfil_ana.jpg"
             alt="Ana Claudia sorrindo com fundo da catedral Notre Dame de Paris."
           />
-          <p>
-            Ana Claudia <br />
-            Plaza Miglioranza <br />
-            Professora de francês <br />
-          </p>
+          <div id="textoProfile">
+            <p>
+              Ana Claudia <br />
+              Plaza Miglioranza
+            </p>
+            <p
+              class="texto"
+              data-pt="Professora de francês"
+              data-fr="Professeur de français"
+            >
+              Professora de francês
+            </p>
+          </div>
         </div>
 
-        <div id="switch" onclick="toggleMode()">
+        <div id="switch" onclick="languageMode()">
           <button></button>
           <span></span>
         </div>
@@ -49,21 +57,43 @@
             <details id="detalhes">
               <summary>Detalhes</summary>
               <ul>
-                <li>Diplomada pela Universidade Paul Valéry</li>
-                <li>Nível C2 de fluência em francês</li>
+                <li
+                  class="texto"
+                  data-pt="Diplomada pela Universidade Paul Valéry."
+                  data-fr="Diplomé de l'Université Paul Valéry."
+                >
+                  Diplomada pela Universidade Paul Valéry.
+                </li>
+                <li
+                  class="texto"
+                  data-pt="Nível C2 de fluência em francês."
+                  data-fr="Niveau C2 de maîtrise en français."
+                >
+                  Nível C2 de fluência em francês.
+                </li>
               </ul>
             </details>
           </li>
 
           <li>
             <details id="historico">
-              <summary>Histórico</summary>
+              <summary class="texto" data-pt="Histórico" data-fr="Historique">
+                Histórico
+              </summary>
               <ul>
-                <li>
+                <li
+                  class="texto"
+                  data-pt="Tive uma primeira carreira trabalhando no banco Caixa Econômica Federal. Fui gerente geral da agência Jubileu."
+                  data-fr="J'ai eu une première carrière à la Caixa Econômica Federal. J'ai été directrice générale de l'agence Jubileu."
+                >
                   Tive uma primeira carreira trabalhando no banco Caixa
                   Econômica Federal. Fui gerente geral da agência Jubileu.
                 </li>
-                <li>
+                <li
+                  class="texto"
+                  data-pt="Depois, vim para a França, estudei francês e conquistei o diploma de nível C2 em proficiência."
+                  data-fr="Ensuite, je suis venue en France, j’ai étudié le français et j’ai obtenu le diplôme de niveau C2 en maîtrise de la langue."
+                >
                   Depois, vim para a França, estudei francês e conquistei o
                   diploma de nível C2 em proficiência.
                 </li>
@@ -73,14 +103,24 @@
 
           <li>
             <details id="reviews">
-              <summary>Avaliação</summary>
+              <summary class="texto" data-pt="Avaliação" data-fr="Avis">
+                Avaliação
+              </summary>
               <ul>
-                <li>
+                <li
+                  class="texto"
+                  data-pt="Ótima professora, animada e com uma pedagogia infalível."
+                  data-fr="Excellente professeure, dynamique et dotée d'une pédagogie infaillible."
+                >
                   Ótima professora, animada e com uma pedagogia infalível.
                   <br />
                   <p>Jubileu - 2025</p>
                 </li>
-                <li>
+                <li
+                  class="texto"
+                  data-pt="Amei o curso, saí fluente!"
+                  data-fr="J'ai adoré le cours, je parle couramment maintenant !"
+                >
                   Amei o curso, saí fluente!
                   <p>Andreia - 2024</p>
                 </li>
@@ -108,15 +148,33 @@
         <ul id="link-list">
           <!-- Um elemento da lista que contem um link -->
           <li>
-            <a href="#">Conhecer meu metodo</a>
+            <a
+              href="#"
+              class="texto"
+              data-pt="Conhecer meu metodo"
+              data-fr="Connaître ma méthodologie"
+              >Conhecer meu metodo</a
+            >
           </li>
 
           <li>
-            <a href="#">Baixar meu e-book</a>
+            <a
+              href="#"
+              class="texto"
+              data-pt="Baixar meu e-book"
+              data-fr="télécharger mon e-book"
+              >Baixar meu e-book</a
+            >
           </li>
 
           <li>
-            <a href="#">Ver meu portifolio</a>
+            <a
+              href="#"
+              class="texto"
+              data-pt="Ver meu portifolio"
+              data-fr="Consulter mon portfolio"
+              >Ver meu portifolio</a
+            >
           </li>
         </ul>
 
@@ -125,7 +183,11 @@
           alt="Foto da Torre Eifel."
         />
       </div>
-      <footer>
+      <footer
+        class="texto"
+        data-pt="feito com base no encino da "
+        data-fr="basé sur les enseignements de "
+      >
         feito com base no encino da
         <a href="https://app.rocketseat.com.br/?type=ALL">Rocketseat</a>.
       </footer>
