@@ -5,6 +5,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --switch-button-url: url(./assets/bandeira-brasil.jpg);
+}
+
+.frenchStyle {
+  --switch-button-url: url(./assets/istockphoto-657672390-612x612.jpg);
+}
+
 body {
   background: linear-gradient(to right, #469eef, #ffffff, #e07169);
   height: 100vh;
@@ -60,6 +68,7 @@ body * {
 
 #switch {
   position: relative;
+  width: 64px;
 }
 
 #switch button {
@@ -68,17 +77,22 @@ body * {
   border: 1px solid black;
   border-radius: 50%;
 
-  background: url(./assets/bandeira-brasil.jpg) no-repeat center/45px;
+  background: var(--switch-button-url) no-repeat center/45px;
 
   position: absolute;
   z-index: 1;
 
   transform: translateY(-50%);
   top: 50%;
-  left: 2%;
+  left: 0;
 }
 
-#switch button:hover{
+.frenchStyle #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch button:hover {
   outline: 6px solid rgba(0, 0, 0, 0.2);
 }
 
