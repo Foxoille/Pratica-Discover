@@ -230,6 +230,8 @@ body * {
 #menu-list summary {
   font-size: larger;
   list-style: none;
+  /*-- O mouse pode selecionar ele como se fosse um botão. --*/
+  cursor: pointer;
 }
 
 #menu-list details {
