@@ -14,7 +14,8 @@
 }
 
 body {
-  background: linear-gradient(to right, #469eef, #ffffff, #e07169) no-repeat;
+  background: linear-gradient(to right, #469eef, #ffffff, #e07169)
+    no-repeat;
   height: 100vh;
 }
 
@@ -245,6 +246,13 @@ footer {
 footer a {
   color: black;
 }
+
+@media (max-width: 470px) {
+  #menu-list {
+    flex-direction: column;
+  }
+}
+
 @keyframes slide-in {
   from {
     left: 0;
