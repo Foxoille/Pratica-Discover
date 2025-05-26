@@ -85,6 +85,8 @@ body * {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
+
+  transition: outline 0.2s;
 }
 
 .frenchStyle #switch button {
@@ -115,16 +117,14 @@ body * {
 
 /*-- Menu --*/
 #menu-list {
-  border: 2px solid black;
-  border-radius: 8px;
-
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   list-style: none;
 
-  margin: 10px 0;
-  padding: 10px;
+  margin: 10px;
+
 
   width: 100%;
   max-width: 600px;
@@ -135,9 +135,14 @@ body * {
 
 #menu-list summary {
   font-size: larger;
+  list-style: none;
 }
 
 #menu-list details {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px;
+
   max-width: 150px;
 }
 

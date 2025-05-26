@@ -6,13 +6,13 @@ function languageMode() {
 
   if (idiomaAtual === "pt") {
     idiomaAtual = "fr"
-    textos.forEach((el) => {
+    textos.forEach(function (el) {
       el.textContent = el.getAttribute("data-" + idiomaAtual)
     })
     html.classList.add("frenchStyle")
   } else {
     idiomaAtual = "pt"
-    textos.forEach((el) => {
+    textos.forEach(function (el) {
       el.textContent = el.getAttribute("data-" + idiomaAtual)
     })
     html.classList.remove("frenchStyle")
