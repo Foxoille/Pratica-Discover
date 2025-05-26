@@ -14,7 +14,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #469eef, #ffffff, #e07169);
+  background: linear-gradient(to right, #469eef, #ffffff, #e07169) no-repeat;
   height: 100vh;
 }
 
@@ -87,11 +87,11 @@ body * {
   left: 0;
 
   transition: outline 0.2s;
+  animation: slide-back 0.5s;
 }
 
 .frenchStyle #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.5s forwards;
 }
 
 #switch button:hover {
@@ -124,7 +124,6 @@ body * {
   list-style: none;
 
   margin: 10px;
-
 
   width: 100%;
   max-width: 600px;
@@ -245,4 +244,21 @@ footer {
 
 footer a {
   color: black;
+}
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
