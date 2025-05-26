@@ -31,7 +31,7 @@ body * {
   /*-- borda --*/
   border-radius: 10px;
   /*-- Background e blur --*/
-  background: rgba(255, 255, 255, 0.5);
+
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
@@ -45,8 +45,8 @@ body * {
 
 /*--Criando linhas com display flex--*/
 #line1 {
-  border: 2px solid black;
   border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
   padding: 10px;
 
   display: flex;
@@ -132,45 +132,41 @@ body * {
   justify-content: space-between;
 }
 
-/*-- Menu --*/
-#menu-list {
+/* -- Estilizando Lista de links --*/
+#line2 ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+
+  width: 100%;
+  margin: 10px;
+}
+
+/* -- Estilizando Links --*/
+#line2 ul a {
+  color: black;
+  display: flex;
+  justify-content: center;
   align-items: center;
 
-  /*-- Tira as flechas laterais --*/
-  list-style: none;
-
-  margin: 10px;
-
-  /*-- Tamanho adaptavel --*/
-  width: 100%;
-  max-width: 600px;
-
-  /*-- Estilo de fonte --*/
-  font-weight: 500;
-  font-size: larger;
-}
-
-#menu-list summary {
-  font-size: larger;
-  list-style: none;
-}
-
-#menu-list details {
-  border: 2px solid black;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 8px;
-  padding: 5px;
 
-  max-width: 150px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none; /* Tira o underline */
+  font-weight: 500;
+
+  transition: background 0.5s;
 }
 
-/*-- Estilizando conteudo das listas --*/
-#menu-list details ul {
-  margin: 10px;
-
-  font-weight: 400;
-  font-size: small;
+/* -- Anima os links quando hover --*/
+#line2 ul li a:hover {
+  background: rgba(0, 0, 0, 0.1);
 }
 
 /* -- Estilizando box de Links Sociais --*/
@@ -188,7 +184,7 @@ body * {
   width: 50%;
   max-width: 100px;
 
-  border: 2px solid black;
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
 
   /* -- Adiciona uma transição ao fundo (deixa mais estetico) --*/
@@ -219,47 +215,50 @@ body * {
   justify-content: space-between;
 }
 
-/* -- Estilizando Lista de links --*/
-#line3 ul {
-  list-style: none;
+/*-- Menu --*/
+#menu-list {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  width: 100%;
-  margin-right: 10px;
-}
-
-/* -- Estilizando Links --*/
-#line3 ul a {
-  color: black;
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 10px;
 
-  padding: 16px 24px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid black;
-  border-radius: 8px;
+  /*-- Tira as flechas laterais --*/
+  list-style: none;
 
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  /*-- Tamanho adaptavel --*/
+  width: 100%;
+  max-width: 600px;
 
-  text-decoration: none; /* Tira o underline */
+  /*-- Estilo de fonte --*/
   font-weight: 500;
-
-  transition: background 0.5s;
+  font-size: larger;
 }
 
-/* -- Anima os links quando hover --*/
-#line3 ul li a:hover {
-  border: 2px solid black;
-  background: rgba(0, 0, 0, 0.1);
+#menu-list summary {
+  font-size: larger;
+  list-style: none;
+}
+
+#menu-list details {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  padding: 5px;
+
+  max-width: 150px;
+}
+
+/*-- Estilizando conteudo das listas --*/
+#menu-list details ul {
+  margin: 10px;
+
+  font-weight: 400;
+  font-size: small;
 }
 
 /* -- Adicona imagem Torre --*/
 #line3 img {
   width: 100px;
+  height: 180px;
   margin: 0 10px;
 
   border-radius: 10px;
