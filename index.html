@@ -15,14 +15,17 @@
       rel="stylesheet"
     />
 
+    <!--Info base HTML-->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aulas de Frances</title>
+    <title>Aulas de francês</title>
+    <!--Linkando nosso documento CSS-->
     <link rel="stylesheet" href="./style.CSS" />
   </head>
 
   <body>
+    <!-- Crianção da box principal -->
     <div id="container">
       <div id="line1">
         <div id="profile">
@@ -31,9 +34,8 @@
             alt="Ana Claudia sorrindo com fundo da catedral Notre Dame de Paris."
           />
           <div id="textoProfile">
-            <p>
-              Ana Claudia
-            </p>
+            <p>Ana Claudia</p>
+            <!--Criando dois tipos de textos que podem ser exibidos e uma class texto-->
             <p
               class="texto"
               data-pt="Professora de francês"
@@ -44,6 +46,7 @@
           </div>
         </div>
 
+        <!-- Criando botão que chama função JS -->
         <div id="switch" onclick="languageMode()">
           <button></button>
           <span></span>
@@ -53,6 +56,7 @@
       <div id="line2">
         <ul id="menu-list">
           <li>
+            <!-- Adicionando Titulo Interativo -->
             <details id="detalhes">
               <summary>Detalhes</summary>
               <ul>
@@ -129,6 +133,7 @@
         </ul>
 
         <div id="contact-links">
+          <!-- Importando os icones para os links sociais-->
           <a href="https://www.instagram.com" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
           </a>
@@ -182,6 +187,8 @@
           alt="Foto da Torre Eifel."
         />
       </div>
+
+      <!-- Rodapé -->
       <footer
         class="texto"
         data-pt="feito com base no encino da "
@@ -202,6 +209,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <!-- Link para nosso documento JS -->
     <script src="./script.js"></script>
   </body>
 </html>

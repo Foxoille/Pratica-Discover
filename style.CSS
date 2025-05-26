@@ -1,35 +1,41 @@
-/*-- Body --*/
+/*-- Reset dos parametros base da pagina --*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*-- Criando variavel para o background do botão br --*/
 :root {
   --switch-button-url: url(./assets/bandeira-brasil.jpg);
 }
-
+/*-- Criando variavel para o background do botão fr --*/
 .frenchStyle {
   --switch-button-url: url(./assets/istockphoto-657672390-612x612.jpg);
 }
 
+/*-- Adicionando background tricolor com efeito gradient para melhor efeito visual. --*/
 body {
-  background: linear-gradient(to right, #469eef, #ffffff, #e07169)
-    no-repeat;
+  background: linear-gradient(to right, #469eef, #ffffff, #e07169) no-repeat;
+  /*-- Ajustando o tamnho do background para pegar toda a viewport --*/
   min-height: 100vh;
 }
 
+/*-- Aplicando a fonte a mesma fonte para toda a pagina. --*/
 body * {
   font-family: "inter", sans-serif;
 }
 
-/*-- Caixa Principal --*/
+/*-- Criando caixa principal --*/
 #container {
+  /*-- borda --*/
   border-radius: 10px;
+  /*-- Background e blur --*/
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
+  /*-- Definindo tamanho adaptavel e maximo --*/
   width: 100%;
   max-width: 700px;
 
@@ -37,13 +43,14 @@ body * {
   padding: 20px;
 }
 
-/*-- Linha Numero um contem Perfil e Botão de Tradução --*/
+/*--Criando linhas com display flex--*/
 #line1 {
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
 
   display: flex;
+  /*-- Deixa cada elemento de um lado da box --*/
   justify-content: space-between;
   align-items: center;
 }
@@ -55,6 +62,7 @@ body * {
   align-items: center;
 }
 
+/*-- Estilizando a imagem de perfil --*/
 #profile img {
   width: 100px;
   height: 100px;
@@ -68,6 +76,7 @@ body * {
 /*-- Botão Tradução --*/
 
 #switch {
+  /*-- Enquadra a position absolute do botão --*/
   position: relative;
   width: 64px;
 }
@@ -78,27 +87,34 @@ body * {
   border: 1px solid black;
   border-radius: 50%;
 
+  /*-- Set background que muda conforme o modo --*/
   background: var(--switch-button-url) no-repeat center/45px;
 
+  /*-- Posicionando o botão em cima do span --*/
   position: absolute;
   z-index: 1;
 
+  /*-- Centralizando o botão na vertical e colocando ele a esquerda --*/
   transform: translateY(-50%);
   top: 50%;
   left: 0;
 
+  /*-- Animações do botão --*/
   transition: outline 0.2s;
   animation: slide-back 0.5s;
 }
 
+/*-- Animação para o modo frenchStyle --*/
 .frenchStyle #switch button {
   animation: slide-in 0.5s forwards;
 }
 
+/*-- Adiciona uma borda externa quando hover --*/
 #switch button:hover {
   outline: 6px solid rgba(0, 0, 0, 0.2);
 }
 
+/*-- Estilizando o Span --*/
 #switch span {
   height: 34px;
   width: 64px;
@@ -122,13 +138,16 @@ body * {
   justify-content: space-between;
   align-items: center;
 
+  /*-- Tira as flechas laterais --*/
   list-style: none;
 
   margin: 10px;
 
+  /*-- Tamanho adaptavel --*/
   width: 100%;
   max-width: 600px;
 
+  /*-- Estilo de fonte --*/
   font-weight: 500;
   font-size: larger;
 }
@@ -146,6 +165,7 @@ body * {
   max-width: 150px;
 }
 
+/*-- Estilizando conteudo das listas --*/
 #menu-list details ul {
   margin: 10px;
 
@@ -153,8 +173,7 @@ body * {
   font-size: small;
 }
 
-/* -- Links Sociais --*/
-
+/* -- Estilizando box de Links Sociais --*/
 #contact-links {
   display: flex;
   flex-direction: column;
@@ -172,9 +191,11 @@ body * {
   border: 2px solid black;
   border-radius: 10px;
 
+  /* -- Adiciona uma transição ao fundo (deixa mais estetico) --*/
   transition: background 0.5s;
 }
 
+/* -- Estilizando Links Sociais --*/
 #contact-links a {
   font-size: 40px;
   color: black;
@@ -188,14 +209,17 @@ body * {
 }
 
 #contact-links a:hover {
+  /* -- Adiciona cor ao fundo quando hover --*/
   background: rgba(0, 0, 0, 0.2);
 }
 
+/*-- Terceira Linha --*/
 #line3 {
   display: flex;
   justify-content: space-between;
 }
 
+/* -- Estilizando Lista de links --*/
 #line3 ul {
   list-style: none;
   display: flex;
@@ -206,11 +230,12 @@ body * {
   margin-right: 10px;
 }
 
+/* -- Estilizando Links --*/
 #line3 ul a {
   color: black;
   display: flex;
-  justify-content: center; /*Eixo X*/
-  align-items: center; /*Eixo Y*/
+  justify-content: center;
+  align-items: center;
 
   padding: 16px 24px;
   background: rgba(255, 255, 255, 0.2);
@@ -226,11 +251,13 @@ body * {
   transition: background 0.5s;
 }
 
+/* -- Anima os links quando hover --*/
 #line3 ul li a:hover {
   border: 2px solid black;
   background: rgba(0, 0, 0, 0.1);
 }
 
+/* -- Adicona imagem Torre --*/
 #line3 img {
   width: 100px;
   margin: 0 10px;
@@ -238,6 +265,7 @@ body * {
   border-radius: 10px;
 }
 
+/* -- Rodapé --*/
 footer {
   margin: 20px;
   text-align: center;
@@ -247,12 +275,16 @@ footer a {
   color: black;
 }
 
+/* -- Adicionando Regras ao CSS --*/
+
+/* -- Permite a adaptação da pagina para dispositivos menores --*/
 @media (max-width: 470px) {
   #menu-list {
     flex-direction: column;
   }
 }
 
+/* -- Cria as animações do botão --*/
 @keyframes slide-in {
   from {
     left: 0;
